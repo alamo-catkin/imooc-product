@@ -1,13 +1,14 @@
-package com.imooc.product.dto;
+package com.imooc.product.common;
 
 import lombok.Data;
 
 /**
+ * 减库存入参对象
  * Created by Catkin
- * 2020-06-26 12:24
+ * 2020-06-26 16:12
  */
 @Data
-public class CartDTO {
+public class DecreaseStockInput {
 
     /**
      * 商品id
@@ -19,10 +20,10 @@ public class CartDTO {
      */
     private Integer productQuantity;
 
-    public CartDTO() {
+    public DecreaseStockInput() {
     }
 
-    public CartDTO(String productId, Integer productQuantity) {
+    public DecreaseStockInput(String productId, Integer productQuantity) {
         this.productId = productId;
         this.productQuantity = productQuantity;
     }
